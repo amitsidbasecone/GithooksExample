@@ -10,12 +10,16 @@
     "e2e": "ng e2e",
     "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
   },
-  "lint-staged": {        "src/**/*.{ts,css,html}": [            "npm run prettier:check"        ]    },
-  "husky": {   
-     "hooks": {  
-        "pre-commit": "lint-staged"        
-      }   
-   },
+  "lint-staged": {
+    "src/**/*.{ts,css,html}": [
+        "npm run prettier:check"
+    ]
+  },
+  "husky": {
+      "hooks": {
+          "pre-commit": "lint-staged"       
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.3",
